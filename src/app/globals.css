@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #ededed;
+    --font-poppins: "Poppins", sans-serif;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-poppins);
+}
+
+.active {
+  color: #f15c54;
+  position: relative;
+}
+
+.active :after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #536cb3;
+  animation: borderGrow 0.5s ease-out forwards;
+  transform-origin: left;
+}
+
+.hero-Background {
+  background-image: url(../../public/img/img11.webp);
+  background-position: center top;
+  background-size: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #536cb3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
