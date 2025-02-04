@@ -7,7 +7,7 @@ const Footer = () => {
   const currentLang = useLocale();
   return (
     <>
-      <footer className="bg-dark">
+      <footer className="bg-[#0a142f]">
         <div className="container w-full md:w-custom-md xl:w-custom-xl mx-auto px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="text-center">
             <p className="bg-gradient-to-r from-[#536CB3] via-[#536CB3] uppercase to-[#F15C54] bg-clip-text text-transparent text-2xl font-bold inline-block">
